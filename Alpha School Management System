@@ -1,0 +1,83 @@
+School Management System
+
+	Modules:
+
+	 1) Admin Dashboard
+
+	 	- Dashboard {Cards, Calendar}
+	 	- Graphs {Stats} *
+	 	- Teachers {Add, Edit, Delete, Login Details}
+	 	- Students {Add, Edit, Delete, Login Details}
+	 	- Classes {Add, Edit, Delete}
+	 	- Courses {Add, Edit, Delete}
+	 	- Events {Add, Edit, Delete}
+	 	- Messages {Add, Edit, Delete} *
+	 	- Attendance {View} *
+	 	- Grades {View} *
+	 	- Administrative task {School Info, School Terms, Report Card, Grades (letter), Lesson Plan}
+
+	 	Admins
+	 	Profile
+	 	Settings - 
+	 	Report Card
+	 	Schooling System
+	 	School Terms 
+
+	 2) Teachers
+
+	 	- Dashboard {cards, todo list}
+	 	- View Student
+	 	- Add, Edit Grade
+	 	- Add, Edit Attendance
+	 	- Add, Edit Assignment *
+	 	- Upload Lesson Plan
+	 	- Upload Files, Docs
+	 	- Graphs {class grades, attendance, content progress} *
+	 	- My Profile
+	 	- Change Password
+
+	 3) Students
+
+	 	- dashboard {main page, graphs, Upload Assignment ,Events} *
+	 	- View Grades *
+	 	- View Attendance *
+	 	- Behaviour *
+	 	- Account Settings {my profile, change password, } 
+	 	- Billing page...
+
+	 4) Accounting
+
+	 	- Dashboard {cards, Fees, }
+	 	- Fees Categories
+	 	- Add Fee
+
+	 5) Discipline
+
+	 	- Dashboard
+	 	- Graphs {Demerits, Merits}
+	 	- Schedule Appointment - tag student, teachers.
+
+	 6) Library (?)
+
+
+	 Alpha SMS routing system
+
+	 https//:www.localhost/AlphaSchool/owitvet/administrators/
+	 https//:www.localhost/AlphaSchool/owitvet/teachers/
+	 https//:www.localhost/AlphaSchool/owitvet/students/
+	 https//:www.localhost/AlphaSchool/owitvet/finance/
+	 https//:www.localhost/AlphaSchool/owitvet/discipline/
+
+
+	 global:
+
+	 https//:www.localhost/AlphaSchool/register/
+
+
+	 Updates:
+	 	- School App {react native / flutter}
+	 	- Inventory for classes, office and warehouse
+	 	- Accounting System
+	 	- Inventory System 
+	 	- Library System
+	 	- Discipline System

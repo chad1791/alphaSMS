@@ -1,0 +1,141 @@
+
+
+
+1) Point of Sale Interface
+	- foods
+	- drinks
+	- orders
+	- tables
+	- sales
+	- Deliveries *not active as yet...
+	- settings {add food items, mark sold out, mark disabled}
+
+2) Table Interface
+	- view food item
+	- add to cart
+	- remove from cart
+	- submit cart
+	- add to order
+
+	- foods
+	- drinks
+	- add name
+	- configure table
+
+3) Admin Interface
+	- Dashboard {stats - cards, graphs - sales line graph, monthly graph, busy hours, top food sales, most used tables, sales by cashiers, (delivery - line graph deliveries, line graph cash, tops sales)}
+	- Reports {sales}
+	- Categories {add, edit delete}
+	- Menu {add, edit delete, mark sold out, mark disabled}
+	- Tables {add, edit, delete}
+	- Restaurant Data {Name, address, gps, contact, banner, opening hours}
+	- Settings {Printer, Receipt, Tax, Discount}
+	- Inventory *not sure...
+
+	///////***** mysql table structures *****///////
+
+	1) Restaurant Admin table
+		- id (auto inc)
+		- email 
+		- password (md5)
+		- pass (varchar)
+		- status
+		- created_on
+
+	2) POS Users table
+		- id (auto inc)
+		- rest_id
+		- First Name
+		- Last Name
+		- email
+		- password (md5)
+		- pass (varchar)
+		- status
+		- level
+		- created_on (timestamp)
+		- last_edited (timestamp)
+
+	3) Categories
+		- id (auto inc)
+		- rest_id
+		- name
+		- active
+		- sold_out
+		- deleted
+		- created_on
+		- last_edited
+		- location
+
+	4) Menu
+		- id (auto inc)
+		- rest_id
+		- cat_id
+		- price
+		- des
+		- image
+		- active
+		- sold_out
+		- deleted
+		- created
+		- last_edited
+		- location
+
+	5) Restaurant Settings
+		- rest_id (primary key)
+		- Print Name (Restaurant)
+		- Printer Name
+		- Tax Included
+		- Tax Amount
+
+	6) Restaurant Profile
+		- rest_id (Primary key)
+		- Name
+		- Cell
+		- Phone
+		- Address
+		- Lat
+		- Lang
+		- banner
+		- Location
+		- Food Type
+		- created
+		- last_edited
+
+	7) Opening Hours
+		- rest_id (Primary Key)
+		- Day
+		- open
+		- close
+
+	8) Tables
+		- id (auto inc)
+		- rest_id
+		- Name/No
+		- status
+		- created
+		- last_edited
+
+	9) Food Sales
+		- invoice_no
+		- table_id
+		- food_id
+		- qty
+		- price
+		- sub
+		- discount
+		- total
+		- grand total
+		- time
+		- created_on
+		- last_edited
+
+	10) Temporary Orders
+		- table_id
+		- food_id
+		- qty
+		- dis
+
+
+
+
+
